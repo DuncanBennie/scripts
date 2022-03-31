@@ -1,10 +1,9 @@
 #!/bin/bash
 
+( cd ~/web/sunday9 ; git pull && hugo )
+( cd ~/web/duncanbennie; git pull && hugo )
+
 case "$OSTYPE" in
-	darwin*)
-		rsync -rv ~/web/sunday9/public/* /Volumes/main/.docker/swag/www/sunday9/
-		rsync -rv ~/web/duncanbennie/public/* /Volumes/main/.docker/swag/www/duncanbennie/
-		;;
 	linux*)
 		rsync -rv ~/web/duncanbennie/public/* ~/.docker/swag/www/duncanbennie/
 		rsync -rv ~/web/sunday9/public/* ~/.docker/swag/www/sunday9/
