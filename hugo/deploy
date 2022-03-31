@@ -6,7 +6,7 @@ case "$OSTYPE" in
 		rsync -rv ~/web/duncanbennie/public/* /Volumes/main/.docker/swag/www/duncanbennie/
 		;;
 	linux*)
-		rsync -r ~/web/duncanbennie/public/* ~/.docker/swag/www/duncanbennie/
-		rsync -r ~/web/sunday9/public/* ~/.docker/swag/www/sunday9/
+		rsync -rv ~/web/duncanbennie/public/* ~/.docker/swag/www/duncanbennie/
+		rsync -rv ~/web/sunday9/public/* ~/.docker/swag/www/sunday9/
 		;;
 esac
