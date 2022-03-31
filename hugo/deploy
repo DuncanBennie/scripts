@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./deploy-duncanbennie
+./deploy-sunday
