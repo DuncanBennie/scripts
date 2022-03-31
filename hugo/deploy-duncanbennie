@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync -r ~/web/hugo/public/* ~/.docker/swag/www/duncanbennie/
+rsync -r ~/web/duncanbennie/public/* ~/.docker/swag/www/duncanbennie/
