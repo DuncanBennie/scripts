@@ -1,3 +1,0 @@
-#!/bin/bash
-
-rsync -r ~/web/duncanbennie/public/* ~/.docker/swag/www/duncanbennie/

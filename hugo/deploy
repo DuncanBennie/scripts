@@ -1,4 +1,12 @@
 #!/bin/bash
 
-./deploy-duncanbennie
-./deploy-sunday
+case "$OSTYPE" in
+	darwin*)
+		rsync -rv ~/web/sunday9/public/* /Volumes/main/.docker/swag/www/sunday9/
+		rsync -rv ~/web/duncanbennie/public/* /Volumes/main/.docker/swag/www/duncanbennie/
+		;;
+	linux*)
+		rsync -r ~/web/duncanbennie/public/* ~/.docker/wag/www/duncanbennie/
+		rsync -r ~/web/sunday9/public/* ~/.docker/swag/www/sunday9/
+		;;
+esac

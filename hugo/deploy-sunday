@@ -1,3 +1,0 @@
-#!/bin/bash
-
-rsync -r ~/web/sunday9/public/* ~/.docker/swag/www/sunday9/
