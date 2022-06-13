@@ -1,7 +1,7 @@
 #!/bin/bash
 
-tar -zcvf /home/sunday/monthlybackup`date +%Y%m%d`.tar.gz /home/sunday
-rclone copy /home/sunday/monthlybackup`date +%Y%m%d`.tar.gz onedrive:monthly -PL
-rm /home/sunday/monthlybackup`date +%Y%m%d`.tar.gz
+tar -zcvf /home/sunday/monthlybackup`date +%Y%m%d`.tar.gz /home/sunday/.docker
+rclone copy /home/sunday/montlybackup`date +%Y%m%d`.tar.gz ovh:monthly -P
+rm /home/sunday/dailybackup`date +%Y%m%d`.tar.gz
 
-rclone delete --min-age 10y onedrive:monthly
+rclone delete --min-age 1y ovh:monthly
