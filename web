@@ -6,4 +6,4 @@
 # to server.             #
 ##########################
 
-rsync -rvun --exclude=".*" ~/duncanbennie/public/* sunday@vps.sunday9.xyz:~/.docker/swag/www/duncanbennie
+rsync -rvu --exclude=".*" ~/duncanbennie/public/* sunday@vps.sunday9.xyz:~/.docker/swag/www/duncanbennie
