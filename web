@@ -1,0 +1,9 @@
+#!/bin/bash
+##########################
+# Copy to /usr/local/bin #
+##########################
+# Rsyncs Hugo directory  #
+# to server.             #
+##########################
+
+rsync -rv ~/duncanbennie/public/* sunday@vps.sunday9.xyz:~/.docker/swag/www/duncanbennie
